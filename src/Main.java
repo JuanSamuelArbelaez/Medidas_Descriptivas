@@ -69,17 +69,18 @@ public class Main {
         list.add(182.0);
         list.add(184.0);
 
+        System.out.println("media: "+Tendencia_Central.ArithmeticMean(list));
 
-        double media=Tendencia_Central.arithmeticMean(list);
-        System.out.println("media: "+media);
+        System.out.println("rango: "+Dispersion.range(list));
 
-        double range=Dispersion.range(list);
-        System.out.println("rango: "+range);
+        System.out.println("varianza: "+Dispersion.Variance(list));
 
-        double variance=Dispersion.variance(list,media);
-        System.out.println("varianza: "+variance);
+        System.out.println("desviacion: "+Dispersion.StandardDeviation(list));
 
-        double deviation=Dispersion.standardDeviation(list,media);
-        System.out.println("desviacion: "+deviation);
+        System.out.println("cuartil 1: "+Position.Quartile(list,1));
+
+        System.out.println("decil 8: "+Position.Decile(list,8));
+
+        System.out.println("percentil 43: "+Position.Percentile(list,43));
     }
 }

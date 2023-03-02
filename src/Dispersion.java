@@ -4,14 +4,15 @@ public class Dispersion {
     public static double range(LinkedList<Double> list){
         return list.get(list.size()-1)-list.get(0);
     }
-    public static double variance(LinkedList<Double> list, double  median){
+    public static double Variance(LinkedList<Double> list){
+        double median=Tendencia_Central.ArithmeticMean(list);
         double sum=0;
         for(Double est:list){
             sum+=Math.pow(est-median,2);
         }
         return (sum/(list.size()-1));
     }
-    public static double standardDeviation(LinkedList<Double> list, double median){
-        return Math.sqrt(variance(list, median));
+    public static double StandardDeviation(LinkedList<Double> list){
+        return Math.sqrt(Variance(list));
     }
 }
