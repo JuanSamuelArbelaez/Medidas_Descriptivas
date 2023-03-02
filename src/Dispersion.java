@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class Dispersion {
-    public static double range(LinkedList<Double> list){
+    public static double Range(LinkedList<Double> list){
         return list.get(list.size()-1)-list.get(0);
     }
     public static double Variance(LinkedList<Double> list){

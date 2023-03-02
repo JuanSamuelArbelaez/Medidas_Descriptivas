@@ -75,7 +75,7 @@ public class Main {
 
         System.out.println("moda(s): "+CentralTendency.Mode(list));
 
-        System.out.println("rango: "+Dispersion.range(list));
+        System.out.println("rango: "+Dispersion.Range(list));
 
         System.out.println("varianza: "+Dispersion.Variance(list));
 
