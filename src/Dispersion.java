@@ -5,7 +5,7 @@ public class Dispersion {
         return list.get(list.size()-1)-list.get(0);
     }
     public static double Variance(LinkedList<Double> list){
-        double median=Tendencia_Central.ArithmeticMean(list);
+        double median= CentralTendency.ArithmeticMean(list);
         double sum=0;
         for(Double est:list){
             sum+=Math.pow(est-median,2);

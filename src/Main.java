@@ -69,7 +69,11 @@ public class Main {
         list.add(182.0);
         list.add(184.0);
 
-        System.out.println("media: "+Tendencia_Central.ArithmeticMean(list));
+        System.out.println("media: "+CentralTendency.ArithmeticMean(list));
+
+        System.out.println("mediana: "+CentralTendency.Median(list));
+
+        System.out.println("moda(s): "+CentralTendency.Mode(list));
 
         System.out.println("rango: "+Dispersion.range(list));
 
